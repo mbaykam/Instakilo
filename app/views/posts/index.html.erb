@@ -1,6 +1,5 @@
 <h1> Instakilo </h1>
-<% @posts.each do |post|%>
-  <%=post.image%>
+<% @posts.each do |post| %>
+  <%= image_tag post.image %>
   <p><%=post.caption%></p>
-
-<%end%>
+<% end -%>

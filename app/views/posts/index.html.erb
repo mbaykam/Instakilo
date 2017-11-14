@@ -1,1 +1,6 @@
 <h1> Instakilo </h1>
+<% @posts.each do |post|%>
+  <%=post.image%>
+  <p><%=post.caption%></p>
+
+<%end%>

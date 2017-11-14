@@ -22,3 +22,6 @@
 
 .byebug_history
 /public/system/posts
+
+.ruby-version
+.ruby-gemset

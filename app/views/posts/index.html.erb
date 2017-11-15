@@ -1,5 +1,7 @@
-<h1> Instakilo </h1>
+<h1 style="color:white"> Instakilo </h1>
+<%= stylesheet_link_tag "frogdance" %>
 <% @posts.each do |post| %>
   <%= image_tag post.image %>
-  <p><%=post.caption%></p>
+  <<p style="color:white">><%=post.caption%></p>
+  <hr>
 <% end -%>

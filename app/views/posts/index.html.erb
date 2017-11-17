@@ -1,11 +1,11 @@
 <h1 style="color:white" > Instakilo </h1>
   <%= stylesheet_link_tag "frogdance" %>
   <%=link_to "New", new_post_path%>
-<div align ="center">
  <% @posts.each do |post| %>
+   <div align ="center">
    <%= image_tag post.image %>
    <p style="color:white"><%=post.caption%></p>
    <%=link_to "Delete", post_path(post.id), method: :delete %>
+   </div>
    <hr>
  <% end -%>
-</div>

@@ -16,8 +16,8 @@ class PostsController < ApplicationController
   end
 
   def destroy
-
-  
+    @post = Post.destroy(1)
+    redirect_to posts_path
   end
 
   private
